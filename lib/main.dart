@@ -37,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Center(
+      body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
@@ -94,6 +94,127 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       )
                     ]),
+              ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Padding(
+              padding: const EdgeInsets.all(10),
+              child: Column(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                        border: Border.all(
+                      width: 1,
+                      color: const Color.fromARGB(255, 60, 191, 20),
+                    )),
+                    child: Column(
+                      children: [
+                        Container(
+                          decoration: const BoxDecoration(
+                            border: Border(
+                              bottom: BorderSide(
+                                color: Color.fromARGB(255, 60, 191, 20),
+                              ),
+                            ),
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Image(
+                                image: const AssetImage('assets/gvardiol.jpg'),
+                                width:
+                                    MediaQuery.of(context).size.width / 2 - 30,
+                              ),
+                              const SizedBox(
+                                width: 5,
+                              ),
+                              const Flexible(
+                                child: Text(
+                                  "Pique Bilang Wasit Untungkan Madrid, Koeman Tepok Jidat",
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 8,
+                              vertical: 5,
+                            ),
+                            child: SizedBox(
+                              width: MediaQuery.of(context).size.width,
+                              child: const Padding(
+                                padding: EdgeInsets.symmetric(
+                                    vertical: 15, horizontal: 8),
+                                child: Text(
+                                  "Barcelona Feb 13, 2021",
+                                  textAlign: TextAlign.left,
+                                ),
+                              ),
+                            )),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                        border: Border.all(
+                      width: 1,
+                      color: const Color.fromARGB(255, 60, 191, 20),
+                    )),
+                    child: Column(
+                      children: [
+                        Container(
+                          decoration: const BoxDecoration(
+                            border: Border(
+                              bottom: BorderSide(
+                                color: Color.fromARGB(255, 60, 191, 20),
+                              ),
+                            ),
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Image(
+                                image: const AssetImage('assets/gvardiol.jpg'),
+                                width:
+                                    MediaQuery.of(context).size.width / 2 - 30,
+                              ),
+                              const SizedBox(
+                                width: 5,
+                              ),
+                              const Flexible(
+                                child: Text(
+                                  "Pique Bilang Wasit Untungkan Madrid, Koeman Tepok Jidat",
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 8,
+                              vertical: 5,
+                            ),
+                            child: SizedBox(
+                              width: MediaQuery.of(context).size.width,
+                              child: const Padding(
+                                padding: EdgeInsets.symmetric(
+                                    vertical: 15, horizontal: 8),
+                                child: Text(
+                                  "Barcelona Feb 13, 2021",
+                                  textAlign: TextAlign.left,
+                                ),
+                              ),
+                            )),
+                      ],
+                    ),
+                  )
+                ],
               ),
             )
           ],
